@@ -1,0 +1,21 @@
+{
+  "name": "planet-vintage",
+  "version": "0.0.1",
+  "description": "Source code for the Planet Vintage! website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "harp server",
+    "compile": "harp compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lodybo/planetvintage.git"
+  },
+  "author": "Lody Borgers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lodybo/planetvintage/issues"
+  },
+  "homepage": "https://github.com/lodybo/planetvintage"
+}
