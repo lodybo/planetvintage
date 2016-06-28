@@ -7,3 +7,9 @@
 
 // Settings: color, fonts, all that kind of stuff
 @import "settings";
+
+// Overwritten Bootstrap styles
+@import "overwrite-bootstrap";
+
+// Component: hero
+@import "hero";
