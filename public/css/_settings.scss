@@ -1,0 +1,49 @@
+// ********************************************************************
+//
+//                             Settings
+//
+// ********************************************************************
+
+// Table of Contents
+// * Color
+
+// ******************************************
+//               Colour
+// ******************************************
+// *** Pallettes
+$brown: #655643;
+$cyan: #80BCA3;
+$yellow: #F6F7BD;
+$orange: #E6AC27;
+$red: #BF4D28;
+
+// *** Color maps
+$colors: (
+  "$primary": $orange,
+  "secondary": $red,
+  "background": tint($brown, 10),
+  "button-background": $orange,
+  "button-border": $red
+);
+
+// *** Color functions
+// Retrieve color from color map
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @else {
+    @warn "#{$key} not found in color list.";
+  }
+}
+
+
+// Slightly lighten a color
+@function tint($color, $percentage) {
+  @return mix(color("light"), $color, $percentage);
+}
+
+// Slightly darken a color
+@function shade($color, $percentage) {
+  @return mix(color("dark"), $color, $percentage);
+}
