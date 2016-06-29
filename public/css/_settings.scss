@@ -24,6 +24,7 @@ $colors: (
   "background": tint($brown, 10),
   "button-background": $orange,
   "button-border": $red,
+  "hero-background": #EEEEEE,
   "light": #FFFFFF,
   "dark": #000000
 );
@@ -42,10 +43,10 @@ $colors: (
 
 // Slightly lighten a color
 @function tint($color, $percentage) {
-  @return mix(color("light"), $color, $percentage);
+  @return mix(color("light"), color($color), $percentage);
 }
 
 // Slightly darken a color
 @function shade($color, $percentage) {
-  @return mix(color("dark"), $color, $percentage);
+  @return mix(color("dark"), color($color), $percentage);
 }
