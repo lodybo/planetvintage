@@ -23,7 +23,9 @@ $colors: (
   "secondary": $red,
   "background": tint($brown, 10),
   "button-background": $orange,
-  "button-border": $red
+  "button-border": $red,
+  "light": #FFFFFF,
+  "dark": #000000
 );
 
 // *** Color functions

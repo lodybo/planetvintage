@@ -13,3 +13,16 @@
     color: color("secondary");
   }
 }
+
+.navbar {
+  margin-bottom: 0;
+
+  &.navbar-default {
+    background-color: color("primary");
+    border: none;
+
+    .navbar-brand, li > a {
+      color: color("light");
+    }
+  }
+}
