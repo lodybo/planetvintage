@@ -16,7 +16,8 @@ function centerJumbotron() {
     var jumbotron = $(".jumbotron");
 
     // First set the height of the hero to that of the image
-    hero.height($(".hero img").innerHeight());
+    var heroHeight = $(".hero img").innerHeight() > 275 ? $(".hero img").innerHeight() : 275;
+    hero.height(heroHeight);
 
     // Get half point of elements
     var heroHalfPoint = hero.innerHeight() / 2;
