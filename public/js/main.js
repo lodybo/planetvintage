@@ -6,6 +6,9 @@
   $(window).resize(function () {
     centerJumbotron();
   });
+
+  // Also add an event listener when the hero image has loaded, we may need to adjust the height of the hero and such the spacing of the page
+  $(".hero img").load(centerJumbotron);
   
 
 })(jQuery);
@@ -16,8 +19,7 @@ function centerJumbotron() {
     var jumbotron = $(".jumbotron");
 
     // First set the height of the hero to that of the image
-    var heroHeight = $(".hero img").innerHeight() > 275 ? $(".hero img").innerHeight() : 275;
-    hero.height(heroHeight);
+    hero.height($(".hero img").innerHeight());
 
     // Get half point of elements
     var heroHalfPoint = hero.innerHeight() / 2;
