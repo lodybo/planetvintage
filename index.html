@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Planet Vintage! is coming soon</title>
+
+        <style>
+            body {
+                background-color: #E6AC27;
+            }
+
+            img {
+                height: 60%;
+                width: 60%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img id="logo" src="pv-logo-transp.png" alt="Planet Vintage! is coming soon" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            // Center image
+            var img = $("#logo");
+
+            var windowHeightHalfPoint = $(window).innerHeight() / 2;
+            var imgHeightHalfPoint = img.innerHeight() / 2;
+
+            var windowWidthHalfPoint = $(window).innerWidth() / 2;
+            var imgWidthHalfPoint = img.innerWidth() / 2;
+
+            var newMarginTop = windowHeightHalfPoint - imgHeightHalfPoint >= 0 ? windowHeightHalfPoint - imgHeightHalfPoint : 0;
+            var newMarginLeft = windowWidthHalfPoint - imgWidthHalfPoint >= 0 ? windowWidthHalfPoint - imgWidthHalfPoint : 0;
+            img.css("margin-top", newMarginTop);
+            img.css("margin-left", newMarginLeft);
+        </script>
+    </body>
+</html>
