@@ -29,6 +29,9 @@
 // *** Navigation
 .navbar {
   margin-bottom: 0;
+  -webkit-transition: opacity 0.2s;
+          transition: opacity 0.2s;
+  opacity: 0;
 
   &.navbar-default {
     background-color: color("primary");
@@ -37,18 +40,5 @@
     .navbar-brand, li > a {
       color: color("light");
     }
-  }
-}
-
-// *** Hero/Jumbotron
-.jumbotron {
-  background-color: tint("hero-background", 25);
-
-  h1 {
-    color: color("primary");
-  }
-
-  small {
-    color: color("secondary");
   }
 }
