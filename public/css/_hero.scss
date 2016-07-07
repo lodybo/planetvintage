@@ -6,6 +6,8 @@
 
 .hero {
   position: relative;
+  background-color: color("hero-background");
+  padding: 15px 0;
 
   img {
     position: absolute;
@@ -13,6 +15,8 @@
     left: 0;
     background-size: cover;
     z-index: 1;
+    width: 75%;
+    height: auto;
   }
 
   .jumbotron {
