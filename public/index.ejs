@@ -33,11 +33,30 @@
     </div>
 
     <div class="col-sm-12 col-md-5 col-lg-6">
-      <h3>Twitter</h3>
+      <p>Op Twitter: <a href="https://twitter.com/planet_v_rocks" target="_blank">@planet_v_rocks</a></p>
+      <a  class="twitter-timeline"
+          data-theme="light"
+          data-link-color="#E6AC27"
+          data-tweet-limit="5"
+          data-chrome="transparent noheader nofooter noborders"
+          href="https://twitter.com/lodybo">Op Twitter: @lodybo</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
     <div class="col-sm-12 col-md-7 col-lg-6">
-      <h3>Instagram</h3>
+      <p>Op Instagram: <a href="https://instagram.com/planetvintagerocks" target="_blank">@planetvintagerocks</a></p>
+      <div id="instafeed"></div>
     </div>
   </div>
 </div>
+
+<!-- Load Instafeed -->
+<script src="js/instafeed.min.js"></script>
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '3512518287',
+        accessToken: '3512518287.c5a252a.97a000a8d97a44629df404b487e7c42f',
+        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+    });
+    userFeed.run();
+</script>
