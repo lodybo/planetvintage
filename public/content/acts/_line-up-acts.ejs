@@ -1,0 +1,21 @@
+<h2>Bands</h2>
+<ul class="list-unstyled">
+  <%
+    for (var i=0; i<public.content.acts._data.length; i++) {
+      var act = public.content.acts._data[i];
+  %>
+    <li>
+      <a href="<%= act.slug %>">
+        <img class="bandpic img-responsive" src="<%= act.image %>" />
+        <h3><%= act.name %></h3>
+      </a>
+      <p>
+        <%= act.description %>
+      </p>
+    </li>
+  <%
+    }
+  %>
+  
+</ul>
+
