@@ -1,20 +1,20 @@
 {
   "index": {
-      "layout": "_homepage-layout"
+      "layout": "_layouts/_homepage-layout"
     },
     "line-up": {
-      "layout": "_line-up-layout"
+      "layout": "_layouts/_line-up-layout"
     },
     "act": {
-      "layout": "_act-layout"
+      "layout": "_layouts/_act-layout"
     },
     "locatie": {
-      "layout": "_page-layout"
+      "layout": "_layouts/_page-layout"
     },
     "ruilbeurs": {
-      "layout": "_page-layout"
+      "layout": "_layouts/_page-layout"
     },
     "contact": {
-      "layout": "_page-layout"
+      "layout": "_layouts/_page-layout"
     }
 }
