@@ -2,12 +2,6 @@
   "index": {
       "layout": "_layouts/_homepage-layout"
     },
-    "line-up": {
-      "layout": "_layouts/_line-up-layout"
-    },
-    "act": {
-      "layout": "_layouts/_act-layout"
-    },
     "locatie": {
       "layout": "_layouts/_page-layout"
     },
