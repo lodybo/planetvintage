@@ -6,3 +6,35 @@ em {
 .social {
   height: 1000px;
 }
+
+body {
+  background-color: color("body-background");
+  color: color("body-text");
+}
+
+a {
+  color: color("link-text");
+  
+  -webkit-transition: color 0.3s;
+          transition: color 0.3s;
+
+  &:hover {
+    color: color("link-text-hover");
+    text-decoration: none;
+  }
+}
+
+img {
+  border: 20px solid color("image-border");
+}
+
+img.no-border {
+  border: none;
+}
+
+a:hover img {
+  -webkit-transition: border-color 0.3s;
+          transition: border-color 0.3s;
+  
+  border-color: tint("image-border-hover", 10);
+}

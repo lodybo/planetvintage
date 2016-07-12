@@ -14,16 +14,23 @@
 $brown: #655643;
 $orange: #E6AC27;
 $red: #BF4D28;
+$beige: #F6F7BD;
+$blue: #80BCA3;
 
 // *** Color maps
 $colors: (
   "primary": $orange,
   "secondary": $red,
-  "background": tint($brown, 10),
+  "body-background": $brown,
+  "body-text": $beige,
+  "link-text": $blue,
+  "link-text-hover": $orange,
   "button-background": $orange,
   "button-border": $red,
   "hero-background": $orange,
   "footer-background": $orange,
+  "image-border": $beige,
+  "image-border-hover": $orange,
   "light": #FFFFFF,
   "dark": #000000
 );
