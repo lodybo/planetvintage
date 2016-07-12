@@ -1,6 +1,6 @@
 {
   "name": "planet-vintage",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "description": "Source code for the Planet Vintage! website",
   "main": "index.js",
   "scripts": {
