@@ -1,19 +1,38 @@
 ;(function ($) {
+  // Settings
+  var $window = $(window);
+  var iFrameCreated = false;
+
   // First: center hero image
   centerHeroImg();
 
+  // And create Google Maps iFrame if needed
+  googleMapsRequired();
+
   // Add an eventlistener in case the window height changes
-  $(window).resize(function () {
+  $window.resize(function () {
+    // Center hero on resize
     centerHeroImg();
+    
+    // Do we need Google Maps?
+    googleMapsRequired();
   });
 
   // Also add an event listener when the hero image has loaded, we may need to adjust the height of the hero and such the spacing of the page
   $(".hero img").load(centerHeroImg);
 
   // Now, calculate when to opaqueify the navigation
-  $(window).scroll(opaqueifyNav);
-  
+  $window.scroll(opaqueifyNav);
 
+  function googleMapsRequired() {
+    // See if the screen is big enough and no iFrame has yet been created
+    if ($window.width() >= 768 && !iFrameCreated) {
+      // Nope, go ahead!
+      iFrameCreated = true;
+
+      createGoogleMapsiFrame();
+    }
+  }
 })(jQuery);
 
 function centerHeroImg() {
@@ -60,4 +79,20 @@ function opaqueifyNav() {
   } else {
     navbar.css("opacity", "0");
   }
+}
+
+function createGoogleMapsiFrame() {
+  // Create iFrame for Google Maps
+  var googleMapsDiv = $("#google-maps")[0];
+  var iFrame = document.createElement("iframe");
+
+  // Add options (attributes) for iFrame
+  iFrame.width = "100%";
+  iFrame.height = "550";
+  iFrame.src = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ96Va-mrZxkcRo16YiaFdpE0&key=AIzaSyBU4G1fF_bSnuC63CmRUN4u-fR4d0vUaaE";
+  iFrame.frameBorder = 0;
+  iFrame.style = "border: 0";
+
+  // Add iFrame to Google Maps div
+  googleMapsDiv.appendChild(iFrame);
 }
