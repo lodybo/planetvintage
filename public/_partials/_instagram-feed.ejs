@@ -1,0 +1,16 @@
+<div class="col-sm-12 col-md-7 col-lg-6">
+  <p>Op Instagram: <a href="https://instagram.com/planetvintagerocks" target="_blank">@planetvintagerocks</a></p>
+  <div id="instafeed"></div>
+</div>
+
+<!-- Load Instafeed -->
+<script src="js/instafeed.min.js"></script>
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '3512518287',
+        accessToken: '3512518287.c5a252a.97a000a8d97a44629df404b487e7c42f',
+        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+    });
+    userFeed.run();
+</script>
