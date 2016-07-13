@@ -1,6 +1,6 @@
 {
   "index": {
-    "layout": "../_layouts/_line-up-layout"
+    "layout": "../_layouts/_page-layout"
   },
   "kid-calloway": {
     "layout": "../_layouts/_act-layout",
