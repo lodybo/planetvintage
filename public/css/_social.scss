@@ -1,0 +1,31 @@
+.social {
+  background-color: color("social-background");
+  padding: 50px 0;
+  
+  em {
+    color: color("text-emphasis-alternate");
+  }
+
+  ul {
+    display: inline;
+    margin-left: 15px;
+  }
+
+  .fa-facebook-official, .fa-twitter-square, .fa-instagram {
+    color: color("body-text");
+    -webkit-transition: color 0.3s;
+            transition: color 0.3s;
+  }
+
+  .fa-facebook-official:hover {
+    color: color("social-facebook-hover");
+  }
+
+  .fa-twitter-square:hover {
+    color: color("social-twitter-hover");
+  }
+
+  .fa-instagram:hover {
+    color: color("social-instagram-hover");
+  }
+}

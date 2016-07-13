@@ -48,12 +48,29 @@
   <div id="google-maps" class="google-maps"></div>
 </div>
 
-<div class="container">
-  <div class="social row">
-    <div class="col-sm-12">
-      <h1>
-        Ik wil meer <a href="facebook.com">Planet Vintage!</a>
-      </h1>
+<div class="social">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1>
+          Wil je meer <em>Planet Vintage!</em>, volg ons op
+          <ul class="list-inline">
+            <li><a href="https://www.facebook.com/planetvintagerocks" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.twitter.com/planet_v_rocks" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/planetvintagerocks" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+          </ul>
+        </h1>
+        <div class="fb-like" data-href="https://www.facebook.com/planetvintagerocks" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+      </div>
     </div>
   </div>
 </div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=269065230126208";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
