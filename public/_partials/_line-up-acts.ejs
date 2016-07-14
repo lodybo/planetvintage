@@ -1,5 +1,5 @@
 <h2>Bands</h2>
-<ul class="list-unstyled">
+<ul class="acts list-unstyled">
   <%
     for (var act in public["line-up"]._data) {
     act = public["line-up"]._data[act];
@@ -9,7 +9,7 @@
         <img class="bandpic img-responsive" src="<%= act.image %>" />
         <h3><%= act.name %></h3>
       </a>
-      <p>
+      <p class="banddesc">
         <%= act.description %>
       </p>
     </li>
