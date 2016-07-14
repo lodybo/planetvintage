@@ -6,6 +6,12 @@ em {
 body {
   background-color: color("body-background");
   color: color("body-text");
+  font-family: font("body");
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: font("heading");
 }
 
 a {

@@ -6,6 +6,7 @@
 
 // Table of Contents
 // * Color
+// * Fonts
 
 // ******************************************
 //               Colour
@@ -62,4 +63,26 @@ $colors: (
 // Slightly darken a color
 @function shade($color, $percentage) {
   @return mix(color("dark"), color($color), $percentage);
+}
+
+// ******************************************
+//               Fonts
+// ******************************************
+// Font declarations
+@import "fonts/_portico-light";
+@import 'https://fonts.googleapis.com/css?family=Assistant';
+
+// Font map
+$fonts: (
+  "body": '"Assistant", "Tahoma", "Arial"',
+  "heading": '"Portico Light", "Verdana", "Arial"'
+);
+
+// Font functions
+@function font($key) {
+  @if (map-has-key($fonts, $key)) {
+    @return unquote(map-get($fonts, $key));
+  } @else {
+    @warn "#{$key} not found as font.";
+  }
 }
