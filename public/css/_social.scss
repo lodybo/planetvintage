@@ -1,6 +1,8 @@
 .social {
-  background-color: color("social-background");
-  padding: 50px 0;
+  &.block {
+    background-color: color("social-background");
+    padding: 50px 0;
+  }
   
   em {
     color: color("text-emphasis-alternate");

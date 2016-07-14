@@ -1,4 +1,18 @@
 .footer {
   background-color: color("footer-background");
   padding: 15px 0;
+
+  &.alternate {
+    background-color: color("footer-alternative");
+  }
+
+  &.alternate .disclaimer {
+    a {
+      color: color("link-text-alternate");
+
+      &:hover {
+        color: color("link-text-alternate-hover");
+      }
+    }
+  }
 }

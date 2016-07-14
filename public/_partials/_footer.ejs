@@ -1,8 +1,24 @@
-<div class="footer">
+<%
+  // First see if we're on the index page of the root site.
+  // That means that current.path contains 1 key and that is "index"
+  var index = (current.path.length === 1 && current.path[0] === "index") ? true : false;
+%>
+<div class="footer <%- index === false ? 'alternate' : '' %>">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        (c) Planet Vintage! 2016
+      <div class="disclaimer col-xs-6">
+        <p>Vragen of opmerkingen? <a href="/contact">Laat het weten</a>!</p>
+        <!-- sponsors -->
+        <p><small>(C) Planet Vintage! 2016</small></p>
+      </div>
+
+      <div class="social col-xs-6 text-right <%- index === true ? 'hidden' : '' %>">
+        Ik wil nog meer <em>Planet Vintage!</em>
+        <ul class="list-inline">
+          <li><a href="https://www.facebook.com/planetvintagerocks" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.twitter.com/planet_v_rocks" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/planetvintagerocks" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+        </ul>
       </div>
     </div>
   </div>
