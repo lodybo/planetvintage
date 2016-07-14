@@ -40,8 +40,16 @@
     background-color: color("primary");
     border: none;
 
+    .navbar-brand {
+      font-family: font("heading");
+    }
+
     .navbar-brand, li > a {
-      color: color("light");
+      color: color("navigation-text");
+
+      &:hover {
+        color: color("navigation-hover");
+      }
     }
   }
 }
