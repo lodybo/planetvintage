@@ -9,8 +9,11 @@
   }
 
   ul {
-    display: inline;
-    margin-left: 15px;
+    line-height: 3;
+  }
+
+  .fb-like {
+    overflow: hidden;
   }
 
   .fa-facebook-official, .fa-twitter-square, .fa-instagram {
