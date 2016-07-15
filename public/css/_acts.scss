@@ -1,6 +1,19 @@
-.acts {
-    .banddesc {
+.acts, .act {
+    .banddesc, .media {
         margin-bottom: 25px;
+    }
+}
+
+.act {
+    margin-top: -25px;
+    padding-top: 25px;
+    
+    .bandpic {
+        margin-bottom: 15px;
+
+        &.top {
+            margin-top: -25px;
+        }
     }
 }
 
