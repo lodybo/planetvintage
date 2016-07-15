@@ -1,8 +1,4 @@
-em {
-  font-style: normal;
-  color: color("text-emphasis");
-}
-
+// Generic
 body {
   background-color: color("body-background");
   color: color("body-text");
@@ -10,6 +6,7 @@ body {
   font-size: 18px;
 }
 
+// Type
 h1, h2, h3, h4, h5, h6 {
   font-family: font("heading");
 }
@@ -26,6 +23,12 @@ a {
   }
 }
 
+em {
+  font-style: normal;
+  color: color("text-emphasis");
+}
+
+// Images
 img {
   border: 20px solid color("image-border");
 }
@@ -40,3 +43,20 @@ a:hover img {
   
   border-color: tint("image-border-hover", 10);
 }
+
+// img.opacify {
+//   opacity: 0;
+//   animation-delay: 3s;
+//   animation-duration: 1s;
+//   animation-name: opacify;
+// }
+
+// @keyframes opacify {
+//   from {
+//     opacity: 0; 
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }
