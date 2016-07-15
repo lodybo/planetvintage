@@ -5,7 +5,7 @@
     "locatie": {
       "layout": "_layouts/_locatie-layout"
     },
-    "ruilbeurs": {
+    "en-meer": {
       "layout": "_layouts/_page-layout"
     },
     "contact": {
