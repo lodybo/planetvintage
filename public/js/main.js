@@ -36,6 +36,11 @@
 })(jQuery);
 
 function centerHeroImg() {
+  // Exit function if no hero is found
+  if ($(".hero").length === 0) {
+    return;
+  }
+  
   // Get elements
   var hero = $(".hero");
   var heroImg = $(".hero img");
@@ -59,6 +64,11 @@ function centerHeroImg() {
 }
 
 function opaqueifyNav() {
+  // Exit function if no hero is found
+  if ($(".hero").length === 0) {
+    return;
+  }
+
   // Get reference to hero
   var hero = {
     el: $(".hero")

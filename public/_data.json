@@ -3,7 +3,7 @@
       "layout": "_layouts/_homepage-layout"
     },
     "locatie": {
-      "layout": "_layouts/_page-layout"
+      "layout": "_layouts/_locatie-layout"
     },
     "ruilbeurs": {
       "layout": "_layouts/_page-layout"
