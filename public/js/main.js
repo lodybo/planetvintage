@@ -111,5 +111,8 @@
     $("#contact-link").on( "click", function(event) {
       $(this).attr("href", "mailto:hi@planetvintage.rocks?subject=Hi!");
     });
+
+    // Every image with the class "opcaify" can be opacified
+    $(".opacify").fadeTo("slow", 1);
   });
 }(jQuery));
