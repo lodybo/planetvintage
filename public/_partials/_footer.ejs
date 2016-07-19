@@ -6,19 +6,25 @@
 <div class="footer <%- index === false ? 'alternate' : '' %>">
   <div class="container">
     <div class="row">
-      <div class="disclaimer col-xs-12 col-md-6">
+      <div class="disclaimer col-xs-12 col-sm-6">
         <p>Vragen of opmerkingen? <a id="contact-link" href="#">Laat het weten</a>!</p>
         <!-- sponsors -->
-        <p><small>(C) Planet Vintage! 2016</small></p>
+        <div class="hidden-xs">
+          <p><small>(C) Planet Vintage! 2016</small></p>
+        </div>
       </div>
 
-      <div class="social col-xs-12 col-md-6 <%- index === true ? 'hidden' : '' %>">
+      <div class="social col-xs-12 col-sm-6 <%- index === true ? 'hidden' : '' %>">
         Ik wil nog meer <em>Planet Vintage!</em>
         <ul class="list-inline">
           <li><a href="https://www.facebook.com/planetvintagerocks" target="_blank"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a></li>
           <li><a href="https://www.twitter.com/planet_v_rocks" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a></li>
           <li><a href="https://www.instagram.com/planetvintagerocks" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
         </ul>
+      </div>
+
+      <div class="col-xs-12 visible-xs">
+        <p><small>(C) Planet Vintage! 2016</small></p>
       </div>
     </div>
   </div>
