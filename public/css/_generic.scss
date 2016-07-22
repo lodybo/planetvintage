@@ -44,19 +44,6 @@ a:hover img {
   border-color: tint("image-border-hover", 10);
 }
 
-// img.opacify {
-//   opacity: 0;
-//   animation-delay: 3s;
-//   animation-duration: 1s;
-//   animation-name: opacify;
-// }
-
-// @keyframes opacify {
-//   from {
-//     opacity: 0; 
-//   }
-
-//   to {
-//     opacity: 1;
-//   }
-// }
+.opacify {
+  opacity: 0;
+}
