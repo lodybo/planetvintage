@@ -9,13 +9,11 @@
   background-color: color("hero-background");
 
   img {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-size: cover;
     z-index: 1;
-    width: 65%;
+    max-width: 100%;
     height: auto;
+    margin: 5% auto;
   }
 
   .jumbotron {

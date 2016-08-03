@@ -51,5 +51,17 @@
         color: color("navigation-hover");
       }
     }
+
+    .navbar-toggle {
+      border-color: color("hamburger-color");
+
+      &:hover, &:focus {
+        background-color: color("hamburger-hover");
+      }
+
+      .icon-bar {
+        background-color: color("hamburger-color"); 
+      }
+    }
   }
 }
