@@ -2,6 +2,7 @@
   "index": {
     "layout": "../_layouts/_page-layout"
   },
+  "acts": ["the-wild-eyed", "kid-calloway", "one-harry"],
   "the-wild-eyed": {
     "layout": "../_layouts/_act-layout",
     "name": "The Wild Eyed",
