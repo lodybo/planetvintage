@@ -2,6 +2,15 @@
   "index": {
     "layout": "../_layouts/_page-layout"
   },
+  "the-wild-eyed": {
+    "layout": "../_layouts/_act-layout",
+    "name": "The Wild Eyed",
+    "slug": "the-wild-eyed",
+    "image": "./the-wild-eyed.jpg",
+    "youtube": "https://www.youtube.com/embed/_IWb6TBbK5c",
+    "description": "The Wild Eyed brengt je Rock zoals het bedoeld is. Met rauwe vocals, scheurende gitaren en drums die inslaan als kanonslagen brengen ze een show om niet te vergeten. Bring your earplugs!",
+    "bio": "The Wild Eyed brengt je Rock zoals het bedoeld is. Met rauwe vocals, scheurende gitaren en drums die inslaan als kanonslagen brengen ze een show om niet te vergeten. Bring your earplugs!"
+  },
   "kid-calloway": {
     "layout": "../_layouts/_act-layout",
     "name": "Kid Calloway",
