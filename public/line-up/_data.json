@@ -2,15 +2,15 @@
   "index": {
     "layout": "../_layouts/_page-layout"
   },
-  "acts": ["the-wild-eyed", "kid-calloway", "one-harry"],
-  "the-wild-eyed": {
+  "acts": ["sheverine", "kid-calloway", "one-harry"],
+  "sheverine": {
     "layout": "../_layouts/_act-layout",
-    "name": "The Wild Eyed",
-    "slug": "the-wild-eyed",
-    "image": "./the-wild-eyed.jpg",
-    "youtube": "https://www.youtube.com/embed/_IWb6TBbK5c",
-    "description": "The Wild Eyed brengt je Rock zoals het bedoeld is. Met rauwe vocals, scheurende gitaren en drums die inslaan als kanonslagen brengen ze een show om niet te vergeten. Bring your earplugs!",
-    "bio": "The Wild Eyed brengt je Rock zoals het bedoeld is. Met rauwe vocals, scheurende gitaren en drums die inslaan als kanonslagen brengen ze een show om niet te vergeten. Bring your earplugs!"
+    "name": "Sheverine",
+    "slug": "sheverine",
+    "image": "./Sheverine.jpg",
+    "youtube": "",
+    "description": "Sheverine: vier goedlachse en ambitieuze vintage liefhebbers, die eenmaal op het podium het publiek wegblazen met hun fuzz-, stoner- en bluesrock talent.",
+    "bio": "Sheverine, een mystiek, mysterieus, vrouwelijk wezen, die voornamelijk in de schaduw leeft. Laat ze zich zien? Dan weet je niet wat je overkomt. Hetzelfde geldt voor de gelijknamige band Sheverine; vier goedlachse en ambitieuze vintage liefhebbers, die eenmaal op het podium het publiek wegblazen met hun fuzz-, stoner- en bluesrock talent. Geïnspireerd door Queens of the Stone Age en Led Zeppelin maken ze vette, vieze herrie met een creatief rauw randje. Ze zijn die band waar het publiek niet voor komt, maar wel achteraf over zal blijven praten. Ben jij klaar voor deze krakende, goed geoliede machine?"
   },
   "kid-calloway": {
     "layout": "../_layouts/_act-layout",
