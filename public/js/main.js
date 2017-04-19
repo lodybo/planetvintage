@@ -58,12 +58,10 @@
   }
 
   function centerLogo(logo) {
-    $window.resize(function () {
-      var windowWidth = $window.width();
-      var logoWidth = logo.width();
+    var windowWidth = $window.width();
+    var logoWidth = logo.width();
 
-      logo.css("left", (windowWidth / 2) - (logoWidth / 2));
-    });
+    logo.css("left", (windowWidth / 2) - (logoWidth / 2));
   }
 
   $(document).ready(function() {
@@ -91,6 +89,9 @@
     var logo = $("#logo-centered");
     if (logo) {
       centerLogo(logo);
+      $window.resize(function () {
+        centerLogo(logo)
+      });
     }
   });
 }(jQuery));
