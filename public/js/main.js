@@ -57,6 +57,15 @@
     }
   }
 
+  function centerLogo(logo) {
+    $window.resize(function () {
+      var windowWidth = $window.width();
+      var logoWidth = logo.width();
+
+      logo.css("left", (windowWidth / 2) - (logoWidth / 2));
+    });
+  }
+
   $(document).ready(function() {
     // And create Google Maps iFrame if needed
     googleMapsRequired();
@@ -77,5 +86,11 @@
 
     // Every image with the class "opcaify" can be opacified
     $(".opacify").fadeTo("slow", 1);
+
+    // Look for a centered logo
+    var logo = $("#logo-centered");
+    if (logo) {
+      centerLogo(logo);
+    }
   });
 }(jQuery));

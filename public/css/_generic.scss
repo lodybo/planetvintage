@@ -47,3 +47,11 @@ a:hover img {
 .opacify {
   opacity: 0;
 }
+
+.sticky {
+  position: absolute;
+
+  &.bottom {
+    bottom: 0;
+  }
+}

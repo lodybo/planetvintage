@@ -2,6 +2,10 @@
   background-color: color("footer-background");
   padding: 15px 0;
 
+  &.index {
+    display: none;
+  }
+
   &.alternate {
     background-color: color("footer-alternative");
   }
