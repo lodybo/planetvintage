@@ -1,14 +1,17 @@
 {
   "index": {
-      "layout": "_layouts/_homepage-layout"
-    },
-    "locatie": {
-      "layout": "_layouts/_locatie-layout"
-    },
-    "en-meer": {
-      "layout": "_layouts/_page-layout"
-    },
-    "contact": {
-      "layout": "_layouts/_page-layout"
-    }
+    "layout": "_layouts/_homepage-layout"
+  },
+  "landing-page": {
+    "layout": "_layouts/_homepage-layout"
+  },
+  "locatie": {
+    "layout": "_layouts/_locatie-layout"
+  },
+  "en-meer": {
+    "layout": "_layouts/_page-layout"
+  },
+  "contact": {
+    "layout": "_layouts/_page-layout"
+  }
 }
