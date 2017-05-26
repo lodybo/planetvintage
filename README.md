@@ -10,3 +10,5 @@ The site is built with the following technologies:
 * [Surge.sh](http://www.surge.sh) (Production site)
 
 Code Quality is being monitored by [Codacy](https://www.codacy.com/app/lodybo-projects/planetvintage)
+
+This project is being run on Angular, and makes use of the [Angular CLI](cli-README)
