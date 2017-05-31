@@ -1,0 +1,31 @@
+.google-maps {
+  display: none;
+  height: 550px;
+}
+
+.fake-maps-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.fake-maps {
+  background-image: url("../images/blue-collar-map.PNG");
+  height: 350px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: scale(1.5,1.5);
+      -ms-transform: scale(1.5,1.5);
+          transform: scale(1.5,1.5);
+}
+
+@media (min-width: 760px) {
+  .fake-maps-wrapper {
+    display: none;
+  }
+
+  .google-maps {
+    display: block;
+  }
+}

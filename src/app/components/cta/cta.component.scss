@@ -1,0 +1,34 @@
+.cta {
+  .headline {
+    h2 {
+      margin: 75px 0;
+    }
+  }
+
+  .sell {
+    h2 {
+      margin: 100px 0 75px;
+    }
+  }
+
+  .btn {
+      margin: 25px 0 75px;
+      text-transform: uppercase;
+      font-size: 24px;
+      padding: 20px;
+
+      em {
+        color: color("text-emphasis-alternate");
+      }
+    }
+
+  .description {
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .alternate-background-color {
+    background-color: color("body-background-alternate");
+  }
+}

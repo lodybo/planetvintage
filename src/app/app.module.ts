@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { SocialBlockComponent } from './components/social-block/social-block.component';
+import { MapsComponent } from './components/maps/maps.component';
+import { CtaComponent } from './components/cta/cta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     HeroComponent,
-    SocialBlockComponent
+    SocialBlockComponent,
+    MapsComponent,
+    CtaComponent
   ],
   imports: [
     BrowserModule,
