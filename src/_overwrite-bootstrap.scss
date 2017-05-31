@@ -1,0 +1,67 @@
+// ********************************************************************
+//
+//                   Overwritten Bootstrap Styles
+//
+// ********************************************************************
+
+// *** Buttons
+.btn-primary {
+  background-color: tint("primary", 20);
+  border-color: color("primary");
+
+  &:hover {
+    background-color: color("primary");
+    border-color: shade("primary", 10);
+  }
+}
+
+// *** Page header
+.page-header {
+  h1 {
+    color: color("primary");
+  }
+
+  small {
+    color: color("secondary");
+  }
+}
+
+// *** Navigation
+.navbar {
+  margin-bottom: 0;
+
+  &.navbar-fixed-top {
+    -webkit-transition: opacity 0.2s;
+            transition: opacity 0.2s;
+    opacity: 0;
+  }
+
+  &.navbar-default {
+    background-color: color("primary");
+    border: none;
+
+    .navbar-brand {
+      font-family: font("heading");
+    }
+
+    .navbar-brand, li > a {
+      color: color("navigation-text");
+
+      &:hover {
+        color: color("navigation-hover");
+      }
+    }
+
+    .navbar-toggle {
+      border-color: color("hamburger-color");
+
+      &:hover, &:focus {
+        background-color: color("hamburger-hover");
+      }
+
+      .icon-bar {
+        background-color: color("hamburger-color");
+      }
+    }
+  }
+}

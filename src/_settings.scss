@@ -1,0 +1,95 @@
+// ********************************************************************
+//
+//                             Settings
+//
+// ********************************************************************
+
+// Table of Contents
+// * Color
+// * Fonts
+
+// ******************************************
+//               Colour
+// ******************************************
+// *** Pallettes
+$brown: #655643;
+$orange: #E6AC27;
+$red: #BF4D28;
+$beige: #F6F7BD;
+$blue: #80BCA3;
+
+// *** Color maps
+$colors: (
+  "primary": $orange,
+  "secondary": $red,
+  "body-background": $brown,
+  "body-background-alternate": $orange,
+  "body-text": $beige,
+  "link-text": $blue,
+  "link-text-hover": $orange,
+  "link-text-alternate": $red,
+  "link-text-alternate-hover": $brown,
+  "text-emphasis": $orange,
+  "text-emphasis-alternate": $brown,
+  "navigation-text": $beige,
+  "navigation-hover": $brown,
+  "hamburger-color": $beige,
+  "hamburger-hover": $brown,
+  "button-background": $orange,
+  "button-border": $red,
+  "hero-background": $brown,
+  "footer-background": $brown,
+  "footer-alternative": $orange,
+  "image-border": $beige,
+  "image-border-hover": $orange,
+  "social-facebook-hover": #3b5998,
+  "social-twitter-hover": #00aced,
+  "social-instagram-hover": #517fa4,
+  "social-background": $orange,
+  "light": #FFFFFF,
+  "dark": #000000
+);
+
+// *** Color functions
+// Retrieve color from color map
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @else {
+    @warn "#{$key} not found in color list.";
+  }
+}
+
+
+// Slightly lighten a color
+@function tint($color, $percentage) {
+  @return mix(color("light"), color($color), $percentage);
+}
+
+// Slightly darken a color
+@function shade($color, $percentage) {
+  @return mix(color("dark"), color($color), $percentage);
+}
+
+// ******************************************
+//               Fonts
+// ******************************************
+// Font declarations
+@import "assets/fonts/_portico-light";
+@import url("https://fonts.googleapis.com/css?family=Assistant");
+
+// Font map
+$fonts: (
+  "body": '"Assistant", "Tahoma", "Arial"',
+  "heading": '"Portico Light", "Verdana", "Arial"'
+);
+
+// Font functions
+@function font($key) {
+  @if (map-has-key($fonts, $key)) {
+    @return unquote(map-get($fonts, $key));
+  } @else {
+    @warn "#{$key} not found as font.";
+  }
+}

@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Settings: color, fonts, all that kind of stuff */
+@import "settings";
+
+/* Overwritten Bootstrap styles */
+@import "overwrite-bootstrap";
+
+/* Add generic styles */
+@import "generic";

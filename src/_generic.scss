@@ -1,0 +1,57 @@
+// Generic
+body {
+  background-color: color("body-background");
+  color: color("body-text");
+  font-family: font("body");
+  font-size: 18px;
+}
+
+// Type
+h1, h2, h3, h4, h5, h6 {
+  font-family: font("heading");
+}
+
+a {
+  color: color("link-text");
+
+  -webkit-transition: color 0.3s;
+          transition: color 0.3s;
+
+  &:hover {
+    color: color("link-text-hover");
+    text-decoration: none;
+  }
+}
+
+em {
+  font-style: normal;
+  color: color("text-emphasis");
+}
+
+// Images
+img {
+  border: 20px solid color("image-border");
+}
+
+img.no-border {
+  border: none;
+}
+
+a:hover img {
+  -webkit-transition: border-color 0.3s;
+          transition: border-color 0.3s;
+
+  border-color: tint("image-border-hover", 10);
+}
+
+.opacify {
+  opacity: 0;
+}
+
+.sticky {
+  position: absolute;
+
+  &.bottom {
+    bottom: 0;
+  }
+}
