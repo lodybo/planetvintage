@@ -1,0 +1,17 @@
+.hero {
+  position: relative;
+  background-color: color("hero-background");
+
+  img {
+    background-size: cover;
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+    margin: 5% auto;
+  }
+
+  .jumbotron {
+    position: relative;
+    z-index: 10;
+  }
+}
