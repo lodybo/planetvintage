@@ -2,32 +2,23 @@
   "index": {
     "layout": "../_layouts/_page-layout"
   },
-  "acts": ["sheverine", "kid-calloway", "one-harry"],
-  "sheverine": {
+  "acts": ["tnsd", "kid-calloway"],
+  "tnsd": {
     "layout": "../_layouts/_act-layout",
-    "name": "Sheverine",
-    "slug": "sheverine",
-    "image": "./Sheverine.jpg",
-    "youtube": "",
-    "description": "Sheverine: vier goedlachse en ambitieuze vintage liefhebbers, die eenmaal op het podium het publiek wegblazen met hun fuzz-, stoner- en bluesrock talent.",
-    "bio": "Sheverine, een mystiek, mysterieus, vrouwelijk wezen, die voornamelijk in de schaduw leeft. Laat ze zich zien? Dan weet je niet wat je overkomt. Hetzelfde geldt voor de gelijknamige band Sheverine; vier goedlachse en ambitieuze vintage liefhebbers, die eenmaal op het podium het publiek wegblazen met hun fuzz-, stoner- en bluesrock talent. Geïnspireerd door Queens of the Stone Age en Led Zeppelin maken ze vette, vieze herrie met een creatief rauw randje. Ze zijn die band waar het publiek niet voor komt, maar wel achteraf over zal blijven praten. Ben jij klaar voor deze krakende, goed geoliede machine?"
+    "name": "The Naked Sweat Drips",
+    "slug": "tnsd",
+    "image": "./tnsd.jpg",
+    "youtube": "https://www.youtube.com/embed/65WPDS8cXZY",
+    "description": "The Naked Sweat Drips combineert sinds 2010 intense psychedelische klanken met psychopathische teksten, gebracht met een dubbele gitaarattack, schreeuwende Hammondorgel en aangrijpende zang.",
+    "bio": "Dit zestal maakt psycho-grunge die doet denken aan het maniakale van Nick Cave, de groove van Queens of the Stone Age en het schizofrene van Pink Floyd, gespeeld met branie en tomeloze energie. Op 27 januari 2017 brengt The Naked Sweat Drips zijn debuutalbum Psycho Sister uit via Butler Records (o.a. Lamb, Anneke van Giersbergen, Donnerwetter). Op het album, bestaande uit tien composities, zoekt de band zowel tekstueel als muzikaal de dunne lijn tussen waanzin en het sociaal aanvaardbare op. Wat doet waanzin met je, hoe ver kun je gaan in gekte en wat gebeurt er wanneer alle grenzen zijn verdwenen?"
   },
   "kid-calloway": {
     "layout": "../_layouts/_act-layout",
     "name": "Kid Calloway",
     "slug": "kid-calloway",
-    "image": "./KC-7762.jpg",
+    "image": "./kid_calloway.jpg",
     "youtube": "https://www.youtube.com/embed/8NOBTw3pESU",
     "description": "70's hard rock uit Eindhoven, á la Thin Lizzy en Led Zeppelin. Met een debuut EP uit en een opvolger in de maak, weet het viertal van Kid Calloway met hun energieke en strakke live-shows iedere zaal naar hun hand te zetten en spelen zo lang als er uit die hand gegeten wordt!",
     "bio": "Kid Calloway is het nooit erkende bastaardkind van Thin Lizzy en MC5, dat in de puberteit volledig op het verkeerde pad was geraakt. Gewapend met beukende riffs, tweestemmig huilende gitaren en een explosieve ritmesectie, probeert Kid Calloway het respect van zijn ouders terug te verdienen. Het viertal van Kid Calloway zet met hun energieke en strakke live-shows iedere zaal naar hun hand en spelen zo lang als er uit die hand gegeten wordt. Plug de instrumenten in, zet de versterkers op 11 en laat je ontvoeren naar een andere planeet door Kid Calloway!"
-  },
-  "one-harry": {
-    "layout": "../_layouts/_act-layout",
-    "name": "One Harry",
-    "slug": "one-harry",
-    "image": "./oneharry.jpg",
-    "youtube": "https://www.youtube.com/embed/AjVzbtw130A",
-    "bio": "One Harry, een band waarvan zelfs de tegenstanders toegeven dat ze haar naam eer aandoet. Naar het schijnt wordt regelmatig geklaagd over het volume van de band, maar de leden zeggen daar nog nooit iets van te hebben gehoord. Een ding staat vast: One Harry is niet voor watjes maar voor doven en diehards. De liedjeskeuze is opmerkelijk voor een rockband. Uit de hele popgeschiedenis worden lukraak nummers geplukt. One Harry speelt geen enkele cover zoals het hoort. Alles klinkt als One Harry, alles klinkt als zestiger en zeventiger jaren rock, met een vleugje punk.",
-    "description": "Wat krijg je als je een stel muzikanten in een hok zet die echte passie hebben voor muziek? One Harry brengt met liefde nummers van toen en nu ten gehore! Met de versterkers op 11 en vol overgave komen nummers van Neil Young, David Bowie, The Verve, en meer voorbij. One Harry hóór je niet alleen, die voel je ook!"
   }
 }
