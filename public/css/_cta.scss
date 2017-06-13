@@ -33,12 +33,15 @@
   }
 }
 
-.google-maps {
+.fb-aftermovie, .google-maps {
   display: none;
+}
+
+.google-maps {
   height: 550px;
 }
 
-.fake-maps-wrapper {
+.fake-maps-wrapper, .fake-fb-aftermovie-wrapper {
   display: block;
   position: relative;
   overflow: hidden;
@@ -55,12 +58,58 @@
           transform: scale(1.5,1.5);
 }
 
+.fake-fb-aftermovie {
+  background-image: url("../images/fb-video.png");
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  height: 150px;
+}
+
+@media (min-width: 300px) {
+  .fake-fb-aftermovie { height: 175px; }
+}
+
+@media (min-width: 350px) {
+  .fake-fb-aftermovie { height: 200px; }
+}
+
+@media (min-width: 400px) {
+  .fake-fb-aftermovie { height: 225px; }
+}
+
+@media (min-width: 450px) {
+  .fake-fb-aftermovie { height: 250px; }
+}
+
+@media (min-width: 500px) {
+  .fake-fb-aftermovie { height: 275px; }
+}
+
+@media (min-width: 550px) {
+  .fake-fb-aftermovie { height: 300px; }
+}
+
+@media (min-width: 600px) {
+  .fake-fb-aftermovie { height: 325px; }
+}
+
+@media (min-width: 650px) {
+  .fake-fb-aftermovie { height: 350px; }
+}
+
+@media (min-width: 700px) {
+  .fake-fb-aftermovie { height: 375px; }
+}
+
 @media (min-width: 760px) {
-  .fake-maps-wrapper {
+  .fake-maps-wrapper, .fake-fb-aftermovie-wrapper {
     display: none;
   }
 
-  .google-maps {
+  .google-maps, .fb-aftermovie {
     display: block;
   }
 }

@@ -1,7 +1,8 @@
 (function ($) {
   // Settings
   var $window = $(window);
-  var iFrameCreated = false;
+  var gMapsiFrameCreated = false;
+  var fbiFrameCreated = false;
   
   function createGoogleMapsiFrame() {
     // Create iFrame for Google Maps
@@ -19,13 +20,51 @@
     googleMapsDiv.appendChild(iFrame);
   }
 
+  function createFBiFrame() {
+    // Create iFrame for Google Maps
+    var fbDiv = $("#fb-aftermovie");
+    fbDiv.css('display', 'none');
+    var iFrame = document.createElement("iframe");
+
+    // Add options (attributes) for iFrame
+    iFrame.width = "750";
+    iFrame.height = "450";
+    iFrame.src = "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fplanetvintagerocks%2Fvideos%2F1632479373713610%2F&show_text=0&width=750";
+    iFrame.frameBorder = 0;
+    iFrame.style = "border:none;overflow:hidden";
+    iFrame.scrolling="no";
+    iFrame.frameborder="0";
+    iFrame.allowTransparency=true;
+    iFrame.allowFullScreen=true;
+
+    // Add iFrame to Google Maps div
+    fbDiv[0].appendChild(iFrame);
+    $('.fake-fb-aftermovie-wrapper').css('display', 'block');
+
+    // Hide fake image when iFrame is loaded
+    $(iFrame).on('load', function () {
+      $('.fake-fb-aftermovie-wrapper').css('display', '');
+      fbDiv.css('display', '');
+    });
+  }
+
   function googleMapsRequired() {
     // See if the screen is big enough and no iFrame has yet been created
-    if ($window.width() >= 768 && !iFrameCreated && $(".google-maps").length > 0) {
+    if ($window.width() >= 768 && !gMapsiFrameCreated && $(".google-maps").length > 0) {
       // Nope, go ahead!
-      iFrameCreated = true;
+      gMapsiFrameCreated = true;
 
       createGoogleMapsiFrame();
+    }
+  }
+
+  function FBRequired() {
+    // See if the screen is big enough and no iFrame has yet been created
+    if ($window.width() >= 768 && !fbiFrameCreated && $(".fb-aftermovie").length > 0) {
+      // Nope, go ahead!
+      fbiFrameCreated = true;
+
+      createFBiFrame();
     }
   }
 
@@ -67,11 +106,13 @@
   $(document).ready(function() {
     // And create Google Maps iFrame if needed
     googleMapsRequired();
+    FBRequired();
 
     // Add an eventlistener in case the window height changes
     $window.resize(function () {      
       // Do we need Google Maps?
       googleMapsRequired();
+      FBRequired();
     });
 
     // Now, calculate when to opaqueify the navigation
