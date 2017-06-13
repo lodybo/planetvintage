@@ -1,8 +1,11 @@
 {
   "name": "planet-vintage",
-  "version": "1.5.0",
+  "version": "2.7.1",
   "description": "Source code for the Planet Vintage! website",
   "main": "index.js",
+  "engines": {
+    "node": "5.12.0"
+  },
   "scripts": {
     "test": "test",
     "start": "harp server -p 9001",
