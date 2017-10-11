@@ -2,7 +2,7 @@
   "index": {
     "layout": "../_layouts/_page-layout"
   },
-  "acts": ["tnsd", "kid-calloway"],
+  "acts": ["tnsd", "heavy-crown"],
   "tnsd": {
     "layout": "../_layouts/_act-layout",
     "name": "The Naked Sweat Drips",
@@ -12,13 +12,13 @@
     "description": "The Naked Sweat Drips combineert sinds 2010 intense psychedelische klanken met psychopathische teksten, gebracht met een dubbele gitaarattack, schreeuwende Hammondorgel en aangrijpende zang.",
     "bio": "Dit zestal maakt psycho-grunge die doet denken aan het maniakale van Nick Cave, de groove van Queens of the Stone Age en het schizofrene van Pink Floyd, gespeeld met branie en tomeloze energie. Op 27 januari 2017 brengt The Naked Sweat Drips zijn debuutalbum Psycho Sister uit via Butler Records (o.a. Lamb, Anneke van Giersbergen, Donnerwetter). Op het album, bestaande uit tien composities, zoekt de band zowel tekstueel als muzikaal de dunne lijn tussen waanzin en het sociaal aanvaardbare op. Wat doet waanzin met je, hoe ver kun je gaan in gekte en wat gebeurt er wanneer alle grenzen zijn verdwenen?"
   },
-  "kid-calloway": {
+  "heavy-crown": {
     "layout": "../_layouts/_act-layout",
-    "name": "Kid Calloway",
-    "slug": "kid-calloway",
-    "image": "./kid_calloway.jpg",
-    "youtube": "https://www.youtube.com/embed/8NOBTw3pESU",
-    "description": "70's hard rock uit Eindhoven, á la Thin Lizzy en Led Zeppelin. Met een debuut EP uit en een opvolger in de maak, weet het viertal van Kid Calloway met hun energieke en strakke live-shows iedere zaal naar hun hand te zetten en spelen zo lang als er uit die hand gegeten wordt!",
-    "bio": "Kid Calloway is het nooit erkende bastaardkind van Thin Lizzy en MC5, dat in de puberteit volledig op het verkeerde pad was geraakt. Gewapend met beukende riffs, tweestemmig huilende gitaren en een explosieve ritmesectie, probeert Kid Calloway het respect van zijn ouders terug te verdienen. Het viertal van Kid Calloway zet met hun energieke en strakke live-shows iedere zaal naar hun hand en spelen zo lang als er uit die hand gegeten wordt. Plug de instrumenten in, zet de versterkers op 11 en laat je ontvoeren naar een andere planeet door Kid Calloway!"
+    "name": "The Heavy Crown",
+    "slug": "heavy-crown",
+    "image": "./heavy-crown.jpg",
+    "youtube": "https://www.youtube.com/embed/j0OR--RCUvI",
+    "description": "Heavy en groovy power-trio uit Brugge! Met subtiele psychedelische invloeden en een flinke knipoog naar de grootheden uit de 60's en 70's, gecombineerd met een origineel en eigentijds geluid!",
+    "bio": "Zoals ze het zelf zeggen: 'Heavy and groovy powertrio from Bruges, with subtle psychedelic and soulful influences. And a less subtle wink to stellar bands from the late sixties and seventies era, although with a contemporary and original sound. Instantly making sense upon the first spin, 'Full of Haze' will please many young listeners in search of that epicness of before-mentioned decades, and will strike an equal amount of people with pure nostalgic joy...'"
   }
 }
